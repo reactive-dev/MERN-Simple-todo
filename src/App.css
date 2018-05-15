@@ -1,0 +1,98 @@
+.app-container {
+  width: 100vw;
+  min-height: 100vh;
+  padding-top: 85px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9;
+}
+
+h1 {
+  background: #78B742 url('/assets/logo.png') no-repeat left center;
+  background-size: 2em;
+  color: #FFFFFF;
+  margin: 0 0 1rem;
+  padding: 1rem 1rem 1rem 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1>a {
+  font-size: 1.2rem;
+  color: #FFFFFF;
+}
+
+hr {
+  transform: scaleY(.5);
+}
+
+input {
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+  width: 25rem;
+  background: #fafafe;
+}
+
+button {
+  cursor: pointer;
+  background: #78B742;
+  color: #FFFFFF;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #6fa93d;
+}
+
+button:hover {
+  background: #82bf4e;
+}
+
+button:active {
+  background: #659a38;
+}
+
+.request-indicator {
+  width: 1em;
+  height: 1em;
+  font-size: 2em;
+  margin: 0 1rem;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.request-indicator:after {
+  content: '\2740';
+  width: 1em;
+  line-height: 1em;
+  display: block;
+  text-align: center;
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.pass {
+  color: #78B742;
+  font-weight: bold;
+}
+
+.fail {
+  color: #E84236;
+  font-weight: bold;
+}
+
+.container {
+  padding: 1rem;
+}
